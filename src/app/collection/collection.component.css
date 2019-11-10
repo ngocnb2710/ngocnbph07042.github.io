@@ -1,0 +1,19 @@
+.card-img-top {
+    max-height: 354px;
+}
+
+.card {
+    border: 0;
+}
+
+.collection {
+    padding: 30px;
+}
+
+h5 {
+    font-size: 22px;
+    line-height: 24px;
+    font-weight: 700;
+    color: black;
+    text-align: center;
+}
