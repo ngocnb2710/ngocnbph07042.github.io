@@ -14,6 +14,21 @@ import { HelpComponent } from './help/help.component';
 import { SocialComponent } from './social/social.component';
 import { NewComponent } from './new/new.component';
 import { CopyrightComponent } from './copyright/copyright.component';
+import { HomeComponent } from './home/home.component';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
+import { CantFindComponent } from './cant-find/cant-find.component';
+import { ListProductComponent } from './list-product/list-product.component';
+import { FormsModule } from '@angular/forms';
+import { AdminComponent } from './admin/admin.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ProductEditComponent } from './product-edit/product-edit.component';
+import { ProductAddComponent } from './product-add/product-add.component';
+import { NgxPaginationModule } from 'ngx-pagination';
+import { NewsComponent } from './news/news.component';
+import { NewAddComponent } from './new-add/new-add.component';
+import { NewEditComponent } from './new-edit/new-edit.component';
 
 @NgModule({
   declarations: [
@@ -28,11 +43,26 @@ import { CopyrightComponent } from './copyright/copyright.component';
     HelpComponent,
     SocialComponent,
     NewComponent,
-    CopyrightComponent
+    CopyrightComponent,
+    HomeComponent,
+    ProductDetailComponent,
+    LoginComponent,
+    RegisterComponent,
+    CantFindComponent,
+    ListProductComponent,
+    AdminComponent,
+    ProductEditComponent,
+    ProductAddComponent,
+    NewsComponent,
+    NewAddComponent,
+    NewEditComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule,
+    NgxPaginationModule
   ],
   providers: [],
   bootstrap: [AppComponent]

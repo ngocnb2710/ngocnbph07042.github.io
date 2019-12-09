@@ -1,0 +1,69 @@
+<div class="container py-5">
+    <header class="text-center mb-5">
+        <h1 class="display-4 font-weight-bold">Sản Phẩm</h1>
+    </header>
+    <h2 class="font-weight-bold mb-2">Sản phẩm mới</h2>
+    <div class="row pb-5 mb-4">
+        <div class="product-item col-lg-3 col-md-6 mb-4 mb-lg-0" *ngFor="let products of products">
+            <div class="card rounded">
+                <a routerLink="/product/{{products.id}}"><img src="{{products.image}}" class="card-img-top" alt=""></a>
+                <div class="card-body">
+                    <h5 class="card-title "><a routerLink="/product/{{products.id}}"
+                            class="text-dark">{{products.name}}</a></h5>
+                    <p class="small text-muted font-italic">{{products.description}}</p>
+                </div>
+                <small class="text-dark">${{products.price}}</small>
+                <button class="btn btn-primary" routerLink="">Add to cart</button>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="font-weight-bold mb-2">Sản phẩm bán chạy</h2>
+    <div class="row pb-5 mb-4">
+        <div class="product-item col-lg-3 col-md-6 mb-4 mb-lg-0" *ngFor="let products of products">
+            <div class="card rounded">
+                <a routerLink="/product/{{products.id}}"><img src="{{products.image}}" class="card-img-top" alt=""></a>
+                <div class="card-body">
+                    <h5 class="card-title "><a routerLink="/product/{{products.id}}"
+                            class="text-dark">{{products.name}}</a></h5>
+                    <p class="small text-muted font-italic">{{products.description}}</p>
+                </div>
+                <small class="text-dark">${{products.price}}</small>
+                <button class="btn btn-primary" routerLink="">Add to cart</button>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="font-weight-bold mb-2">Men</h2>
+    <div class="row pb-5 mb-4">
+        <div class="product-item col-lg-3 col-md-6 mb-4 mb-lg-0" *ngFor="let products of products">
+            <div class="card rounded">
+                <a routerLink="/product/{{products.id}}"><img src="{{products.image}}" class="card-img-top" alt=""></a>
+                <div class="card-body">
+                    <h5 class="card-title "><a routerLink="/product/{{products.id}}"
+                            class="text-dark">{{products.name}}</a></h5>
+                    <p class="small text-muted font-italic">{{products.description}}</p>
+                </div>
+                <small class="text-dark">${{products.price}}</small>
+                <button class="btn btn-primary" routerLink="">Add to cart</button>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="font-weight-bold mb-2">Women</h2>
+    <div class="row pb-5 mb-4">
+        <div class="product-item col-lg-3 col-md-6 mb-4 mb-lg-0" *ngFor="let products of products">
+            <div class="card rounded">
+                <a routerLink="/product/{{products.id}}"><img src="{{products.image}}" class="card-img-top" alt=""></a>
+                <div class="card-body">
+                    <h5 class="card-title "><a routerLink="/product/{{products.id}}"
+                            class="text-dark">{{products.name}}</a></h5>
+                    <p class="small text-muted font-italic">{{products.description}}</p>
+                </div>
+                <small class="text-dark">${{products.price}}</small>
+                <button class="btn btn-primary" routerLink="">Add to cart</button>
+                
+            </div>
+        </div>
+    </div>
+</div>

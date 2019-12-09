@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="admin">
+        <a routerLink="/add-product" class="btn btn-primary">Add product</a>
+        <br>
+        <br>
+        <table class="customers">
+                <tr>
+                  <th>Ảnh</th>
+                  <th>ID</th>
+                  <th>Tên</th>
+                  <th>Giá</th>
+                  <th>Thông tin</th>
+                </tr>
+                <tr *ngFor="let admin of products | paginate:{itemsPerPage: 5, currentPage:p}">
+                    <td><a routerLink="/product/{{admin.id}}"><img src="{{admin.image}}" class="img-admin"></a></td>
+                    <td>{{admin.id}}</td>
+                    <td>{{admin.name}}</td>
+                    <td>${{admin.price}}</td>
+                    <td>{{admin.description}}</td>
+                    <td><button routerLink="/product/edit/{{admin.id}}">Edit</button></td>
+                    <td><button (click)="deleteProduct(admin.id)">Delete</button></td>  
+                </tr>
+                <div id="pagination">
+                        <pagination-controls (pageChange)="p=$event"></pagination-controls>
+                    </div> 
+              </table>
+    </div>
+</div>

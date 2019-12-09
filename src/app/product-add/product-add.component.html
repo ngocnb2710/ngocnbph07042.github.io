@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="add-product">
+        <h1 class="title">THÊM SẢN PHẨM</h1>
+        <form action="">
+            <h5>Tên sản phẩm</h5>
+            <input type="text" [(ngModel)]="product.name" name="product-name">
+            <h5>Giá sản phẩm</h5>
+            <input type="text" [(ngModel)]="product.price" name="product-price">
+            <h5>Thông tin sản phẩm</h5>
+            <input type="text" [(ngModel)]="product.description" name="product-description">
+            <br>
+            <br>
+            <button (click)="addProduct()" class="btn btn-primary">Add</button>
+        </form>
+    </div>
+</div>

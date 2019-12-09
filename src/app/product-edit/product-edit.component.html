@@ -1,0 +1,11 @@
+<div *ngIf="product">
+    <form action="">
+        <h5>Tên sản phẩm</h5>
+        <input type="text" name="product-name" id="" [(ngModel)]="product.name">
+        <h5>Giá sản phẩm</h5>
+        <input type="text" [(ngModel)]="product.price" name="product-price">
+        <h5>Thông tin sản phẩm</h5>
+        <input type="text" [(ngModel)]="product.description" name="product-description">
+        <button (click)="saveProduct(product)">Save</button>
+    </form>
+</div>

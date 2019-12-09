@@ -13,15 +13,73 @@
     <a href="#" class="logo">
       <img src="http://cdn.nhanh.vn/cdn/store/11486/store_1497845316_810.jpg" alt="logo">
     </a>
-    <app-nav></app-nav>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" routerLinkActive="active" routerLink="/home">Trang chủ </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLinkActive="active" routerLink="/list-product">Sản phẩm</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" routerLinkActive="active" routerLink="/about" >Giới thiệu</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" routerLinkActive="active" routerLink="/news" >Tin tức</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" routerLinkActive="active">Liên hệ</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" routerLinkActive="active" >Hỏi đáp</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tài khoản</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" routerLinkActive="active" routerLink="/login">Đăng nhập</a>
+              <a class="dropdown-item" routerLinkActive="active" routerLink="/register">Đăng ký</a>
+              <a class="dropdown-item" href="#">Quên mật khẩu</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Đăng xuất</a>
+              <a class="dropdown-item" href="#">Đổi mật khẩu</a>
+              <a class="dropdown-item" href="#">Cập nhật tài khoản</a>
+            </div>
+        </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>  
   </header>
-  <app-hero></app-hero>
-  <app-products></app-products>
-  <app-hero-collection></app-hero-collection>
-  <app-collection></app-collection>
+  <router-outlet></router-outlet>
   <footer>
-    <app-footer></app-footer>
-    <app-copyright></app-copyright>
+    <div class="footer">
+      <div class="row">
+          <div class="col-sm">
+              about
+          </div>
+          <div class="col-sm">
+              help
+          </div>
+          <div class="col-sm">
+              social
+          </div>
+          <div class="col-sm">
+              new
+          </div>
+      </div>
+  </div>  
+    <div class="copyright">
+      copyright
+    </div>
   </footer>
 </body>
 
